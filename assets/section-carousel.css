@@ -35,12 +35,27 @@
         margin: 0;
     }
 
+    .carousel__slider .swiper-pagination {
+      text-align: left;
+      padding: 0 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .carousel__slider .swiper-pagination {
+        text-align: center;
+      }
+    }
+
     .carousel__slider .swiper-pagination-bullet {
-      width: 40px;
-      height: 6px;
+      width: clamp(1.75rem, 1.2039rem + 2.3301vw, 4rem);
+      height: clamp(0.134375rem, 0.0214rem + 0.4822vw, 0.6rem);
       background-color: rgb(var(--color-button-text));
       border-radius: 0;
       opacity: 1;
+    }
+
+    .carousel__slider .swiper-pagination-bullet:first-child {
+      margin-left: 0;
     }
 
     .carousel__slider .swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -53,7 +68,6 @@
     }
 
     .carousel__decor {
-      /* display: none; */
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -65,28 +79,43 @@
       -ms-transform: translate(0, -50%);
       transform: translate(0, -50%);
       pointer-events: none;
-      overflow: hidden;
+      /* overflow: hidden; */
+      width: 100%;
+    }
+
+    .carousel__decor img {
+      width: 100%;
+      min-width: 223px;
+      max-width: clamp(15.7375rem, 4.6301rem + 47.3916vw, 61.5rem);
+      height: auto;
+      margin-left: auto;
     }
 
     .carousel__decor > div {
       position: absolute;
-      top: 0;
-      right: -40%;
+      top: -15%;
+      right: 0;
       z-index: -1;
       display: block;
-      border-radius: 484px;
-      width: 484px;
-      height: 484px;
-      background-color: #feecd7;
+      /* border-radius: 484px;
+      width: clamp(17.26875rem, 9.7126rem + 32.2395vw, 48.4rem);
+      height: clamp(17.26875rem, 9.7126rem + 32.2395vw, 48.4rem);
+      background-color: #feecd7; */
+      background-image: url('https://cdn.shopify.com/s/files/1/0569/6241/6736/files/Elipses.svg?v=1710946292');
+      width: 100%;
+      height: 100%;
+      background-position: center right;
+      background-size: contain;
+      background-repeat: no-repeat;
     }
 
-    .carousel__decor > div::before {
+    /* .carousel__decor > div::before {
       content: "";
       position: absolute;
       top: 37px;
       right: 37px;
-      width: 408px;
-      height: 408px;
+      width: clamp(14.5875rem, 8.2252rem + 27.1456vw, 40.8rem);
+      height: clamp(14.5875rem, 8.2252rem + 27.1456vw, 40.8rem);
       border-radius: 408px;
       background-color: rgb(var(--color-button-text));
     }
@@ -96,11 +125,11 @@
       position: absolute;
       top: 50px;
       right: 50px;
-      width: 384px;
-      height: 384px;
+      width: clamp(13.70625rem, 7.7126rem + 25.5728vw, 38.4rem);
+      height: clamp(13.70625rem, 7.7126rem + 25.5728vw, 38.4rem);
       border-radius: 384px;
       background-color: #fbbd1f;
-    }
+    } */
 
     /* .carousel__decor img {
       position: absolute;
@@ -112,12 +141,15 @@
     }
 
     .decor-slide__button {
+      position: absolute;
+      bottom: 0px;
+      right: 9%;
       display: inline-flex;
-      padding: 0px 40px;
+      padding: 0px clamp(1.6875rem, 1.1262rem + 2.3948vw, 4rem);
       justify-content: center;
       align-items: center;
       color: #ea552b;
-      font-size: 20px;
+      font-size: clamp(1.25rem, 1.068rem + 0.7767vw, 2rem);
       font-weight: 600;
       line-height: normal;
       text-transform: uppercase;
@@ -125,7 +157,9 @@
       border-radius: 30px;
       background: #f8cf64;
       box-shadow: 0px 0px 10px 0px #ffcc48, 0px 0px 4px 0px rgb(var(--color-button-text));
-      min-height: 58px;
+      min-height: clamp(3.8rem, 3.3123rem + 2.0809vw, 5.809375rem);
+      max-height: 58px;
+      min-width: calc(8.4rem + var(--buttons-border-width) * 2);
       transition: all 0.3s ease 0s;
     }
 
@@ -166,6 +200,11 @@
         -ms-transform: translate(50%, 0);
         transform: translate(50%, 0);
         color: rgb(var(--color-button-text));
+    }
+
+    .main-slide__outer > *,
+    .secondary-slide__outer > * {
+      padding: 0 1.5rem;
     }
 
     .main-slide__inner {
@@ -211,7 +250,7 @@
       text-transform: uppercase;
       border-radius: 36px;
       border: 2px solid rgb(var(--color-button-text));
-      background-color: #b31d26;
+      background-color: #ea552b;
       padding: 0 42px;
       min-height: clamp(2.625rem, 1.6541rem + 4.1424vw, 6.625rem);
       max-height: 70px;
@@ -227,6 +266,7 @@
         flex-shrink: initial;
         flex-basis: initial;
         justify-content: flex-end;
+        background-color: #b31d26;
       }
     }
 
@@ -260,14 +300,21 @@
     .secondary-slide__outer {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      gap: 0px;
+      align-items: flex-start;
+      gap: 10px;
       width: 100%;
       /* max-width: 850px; */
     }
 
+    @media (min-width: 992px) {
+      .secondary-slide__outer {
+       gap: 0px;
+       align-items: center;
+      }
+    }
+
     .secondary-slide__subtitle {
-      font-size: 44px;
+      font-size: clamp(1.0625rem, 0.2737rem + 3.3657vw, 4.3125rem);
       line-height: 140%;
       text-transform: uppercase;
       color: inherit;
@@ -276,32 +323,47 @@
 
     .secondary-slide__inner {
       display: flex;
-      gap: 45px;
+      gap: 75px;
       align-items: stretch;
     }
 
     .secondary-slide__title {
-      font-size: 60px;
-      line-height: 56px;
+      font-size: clamp(1.375rem, 0.2524rem + 4.7896vw, 6rem);
+      line-height: 100%;
       text-transform: uppercase;
       color: inherit;
       margin: 0;
+      text-align: left;
     }
 
-    .secondary-slide__title span {
+    /* .secondary-slide__title span {
+      display: block;
+      color: #f8cf64;
+    } */
+
+    .secondary-slide__title::first-line {
       color: #f8cf64;
     }
 
     .secondary-slide__button {
       border-radius: 30px;
       color: #ea552b;
-      font-size: 20px;
+      font-size: clamp(1.25rem, 1.068rem + 0.7767vw, 2rem);
       font-weight: 600;
       line-height: normal;
       text-transform: uppercase;
       background-color: #fbbd1f;
       box-shadow: 0px 0px 10px 0px #ffcc48, 0px 0px 4px 0px rgb(var(--color-button-text));
       transition: all 0.3s ease 0s;
+      padding: 0;
+      min-width: calc(8.4rem + var(--buttons-border-width) * 2);
+      min-height: calc(3.5rem + var(--buttons-border-width) * 2);
+    }
+
+    @media (min-width: 576px) {
+      .secondary-slide__button {
+        padding: 0 clamp(0rem, -0.6068rem + 2.589vw, 2.5rem);
+      }
     }
 
     .secondary-slide__button:hover {
