@@ -19,7 +19,7 @@
           "settings": {
             "secondary_image": "shopify:\/\/shop_images\/Main_photo_2.png",
             "subtitle": "Discover traditional paraguayan food",
-            "title": "delivered your door",
+            "title": "<span>delivered<\/span> your door",
             "secondary_button_text": "Order",
             "secondary_button_link": "#"
           }
@@ -29,7 +29,7 @@
           "settings": {
             "secondary_image": "shopify:\/\/shop_images\/Main_photo_3.png",
             "subtitle": "Celebrate your special date",
-            "title": "in a special place",
+            "title": "in a <span>special place<\/span>",
             "secondary_button_text": "details",
             "secondary_button_link": "#"
           }
