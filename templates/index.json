@@ -13,18 +13,42 @@
             "button_link": "#",
             "keywords_text": "handmade, traditional, authentic"
           }
+        },
+        "secondary_slide_yczMKn": {
+          "type": "secondary_slide",
+          "settings": {
+            "secondary_image": "shopify:\/\/shop_images\/Main_photo_2.png",
+            "subtitle": "Discover traditional paraguayan food",
+            "title": "delivered your door",
+            "secondary_button_text": "Order",
+            "secondary_button_link": "#"
+          }
+        },
+        "secondary_slide_N4zydt": {
+          "type": "secondary_slide",
+          "settings": {
+            "secondary_image": "shopify:\/\/shop_images\/Main_photo_3.png",
+            "subtitle": "Celebrate your special date",
+            "title": "in a special place",
+            "secondary_button_text": "details",
+            "secondary_button_link": "#"
+          }
         }
       },
       "block_order": [
-        "main_slide_yjL76h"
+        "main_slide_yjL76h",
+        "secondary_slide_yczMKn",
+        "secondary_slide_N4zydt"
       ],
       "settings": {
-        "padding_top": 0,
-        "padding_bottom": 0,
+        "padding_top": 20,
+        "padding_bottom": 200,
         "padding_top_mobile": 0,
-        "padding_bottom_mobile": 0,
+        "padding_bottom_mobile": 100,
+        "background_image": "shopify:\/\/shop_images\/Vector1.png",
         "decor_button_text": "SHOP online",
-        "decor_button_link": ""
+        "decor_button_link": "#",
+        "decor_image": "shopify:\/\/shop_images\/Cup.png"
       }
     }
   },
