@@ -3,29 +3,28 @@
     "carousel_ekV3Hr": {
       "type": "carousel",
       "blocks": {
-        "info_89M8tW": {
-          "type": "info",
+        "main_slide_yjL76h": {
+          "type": "main_slide",
           "settings": {
-            "title": "Make an appointment using Booksopen",
-            "button_link_google_play": "",
-            "button_link_app_store": ""
-          }
-        },
-        "image_kAGhWM": {
-          "type": "image",
-          "settings": {
+            "main_image": "shopify:\/\/shop_images\/Main_photo.png",
+            "title_1": "Paraguayan",
+            "title_2": "food",
+            "button_text": "Menu",
+            "button_link": "#",
+            "keywords_text": "handmade, traditional, authentic"
           }
         }
       },
       "block_order": [
-        "info_89M8tW",
-        "image_kAGhWM"
+        "main_slide_yjL76h"
       ],
       "settings": {
         "padding_top": 0,
         "padding_bottom": 0,
         "padding_top_mobile": 0,
-        "padding_bottom_mobile": 0
+        "padding_bottom_mobile": 0,
+        "decor_button_text": "SHOP online",
+        "decor_button_link": ""
       }
     }
   },
