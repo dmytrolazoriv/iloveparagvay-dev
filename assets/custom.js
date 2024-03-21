@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    
+
     if (document.querySelector(".carousel__slider")) {
         const carousel = new Swiper(".carousel__slider", {
             slidesPerView: 'auto',
@@ -10,26 +10,32 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-function carouselDecorPosition() {
-    const screenWidth = window.innerWidth;
-    let topValue;
-    let carouselElement = document.querySelector('.carousel__decor');
-
-    // Calculate top value based on screen width
-    if (screenWidth >= 1920) {
-        topValue = '50%'; // Initial value
-    } else if (screenWidth <= 375) {
-        topValue = '100%'; // Adjusted value
-    } else {
+    function carouselDecorPosition() {
+        const screenWidth = window.innerWidth;
+        let topValue;
+        let carouselElement = document.querySelector('.carousel__decor');
+        let carouselContainer = document.querySelector('.carousel');
+    
+        if (!carouselElement || !carouselContainer) return;
+    
+        // Calculate top value based on screen width and padding-bottom of carousel container
+        const carouselComputedStyle = window.getComputedStyle(carouselContainer);
+        let carouselPaddingBottom = parseInt(carouselComputedStyle.getPropertyValue('padding-bottom').replace('px', ''));
+    
+        // Adjust carouselPaddingBottom for small screens
+        if (screenWidth < 576) {
+            carouselPaddingBottom *= 2; // Double the padding for screens smaller than 576px
+        }
+    
+        // Calculate top value based on screen width
         const difference = 1920 - 375;
         const ratio = (1920 - screenWidth) / difference; // Inverse ratio for smooth transition
-        topValue = `${50 + ratio * 50}%`; // Interpolated value between 50% and 100%
+        topValue = `calc(50% + ${ratio * 50}% - ${carouselPaddingBottom / 2}px)`; // Interpolated value between 50% and 100%
+    
+        if (carouselElement) {
+            carouselElement.style.top = topValue;
+        }
     }
-
-    if (carouselElement) {
-        carouselElement.style.top = topValue;
-    }
-}
 
 window.addEventListener('load', carouselDecorPosition);
 window.addEventListener('resize', carouselDecorPosition);
@@ -43,13 +49,13 @@ function carouselDecorButtonPosition() {
 
     // Calculate right value based on screen width
     if (screenWidth >= 768) {
-        rightValue = '8%'; // Initial value
+        rightValue = '7%'; // Initial value
     } else if (screenWidth <= 375) {
         rightValue = '49%'; // Adjusted value
     } else {
         const difference = 768 - 375;
         const ratio = (768 - screenWidth) / difference; // Inverse ratio for smooth transition
-        rightValue = `${8 + ratio * 40}%`; // Interpolated value between 8% and 49%
+        rightValue = `${7 + ratio * 40}%`; // Interpolated value between 8% and 49%
     }
 
     if (carouselButton) {
