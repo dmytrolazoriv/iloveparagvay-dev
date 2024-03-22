@@ -371,6 +371,9 @@
     "popular_countries_regions": "Popular countries\/regions",
     "country_results_count": "{{ count }} countries\/regions found"
   },
+  "reserve_button": {
+    "text": "Reserve a table"
+  },
   "customer": {
     "account": {
       "title": "Account",

@@ -1,0 +1,212 @@
+.discover {
+    background-image: url("https://cdn.shopify.com/s/files/1/0569/6241/6736/files/Vector1.png?v=1711025986");
+    background-position: 100% 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+    .discover {
+        background-position: 100% top;
+    }
+}
+
+@media (min-width: 1440px) {
+    .discover {
+        background-position: bottom left;
+    }
+}
+
+.discover__top {
+}
+
+.discover__items {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.discover__item {
+    
+}
+
+.top-discover {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: clamp(1.7rem, 1.1417rem + 2.3819vw, 4rem);
+}
+
+.top-discover__upper {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: clamp(0.9rem, 0.5845rem + 1.3463vw, 2.2rem);
+}
+
+@media (min-width: 768px) {
+    .top-discover__upper {
+        flex-direction: row;
+    }
+}
+
+
+.top-discover__title {
+    font-size: clamp(4rem, 1.8932rem + 2.589vw, 8rem);
+    line-height: normal;
+    text-transform: uppercase;
+    color: #f09981;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .top-discover__title {
+        color: #b31d26;
+    }
+}
+
+@media (min-width: 1200px) {
+    .top-discover__title {
+        font-size: 80px;
+    }
+}
+
+.top-discover__button {
+    color:#ffffff;
+    font-size: clamp(1.065rem, 0.8381rem + 0.9683vw, 2rem);
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: clamp(1.065rem, 0.8381rem + 0.9683vw, 2rem) clamp(1.7rem, 1.1417rem + 2.3819vw, 4rem);
+    border-radius: 30px;
+    background-color: #b31d26;
+    box-shadow: 0px 0px 4px 0px #ffffff, 0px 0px 10px 0px #b31d26;
+    transition: all 0.3s ease 0s;
+}
+
+.top-discover__button:hover {
+    background-color: #ea552b;
+}
+
+.top-discover__subtitle {
+    font-size: clamp(1.7rem, 1.1417rem + 2.3819vw, 4rem);
+    line-height: normal;
+    text-transform: uppercase;
+    color:#183e6f;
+    margin: 0;
+}
+
+.item-discover {
+    flex: 1;
+    min-width: 0;
+}
+
+.item-discover_small {
+    order: 2;
+}
+
+.item-discover_big {
+    order: 1;
+}
+
+@media (min-width: 1440px) {
+    .item-discover_small {
+        order: 0;
+    }
+    
+    .item-discover_big {
+        order: 0;
+    }
+}
+
+.item-discover.item-discover_big {
+    flex-basis: 100%;
+}
+
+.item-discover.item-discover_small {
+  flex-basis: calc(50% - 10px);
+}
+
+@media (min-width: 1440px) {
+    .item-discover.item-discover_big,
+    .item-discover.item-discover_small {
+        flex-basis: auto;
+    }
+}
+
+.item-discover__image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: clamp(1.37rem, 0.9258rem + 1.8951vw, 3.2rem);
+}
+
+.item-discover__image img {
+    display: block;
+    line-height: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+.item-discover_small .item-discover__image::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    max-width: 408px;
+    max-height: 408px;
+    min-width: 172px;
+    min-height: 172px;
+    z-index: -1;
+}
+
+.item-discover_big .item-discover__image::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    max-width: 508px;
+    max-height: 508px;
+    min-width: 240px;
+    min-height: 240px;
+    z-index: -1;
+}
+
+.item-discover_small:nth-child(1) .item-discover__image::after {
+    background-color: #b31d26;
+}
+
+.item-discover_big:nth-child(2) .item-discover__image::after {
+    background-color: #fbbd1f;
+}
+
+.item-discover_small:nth-child(3) .item-discover__image::after {
+    background-color: #6786b8;
+}
+
+.item-discover__name {
+    color:#514e4b;
+    font-size: clamp(1.2rem, 1.1029rem + 0.4142vw, 1.6rem);
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 20px 0 0 0;
+    text-align: center;
+}

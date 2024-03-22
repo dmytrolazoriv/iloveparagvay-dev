@@ -18,13 +18,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 6px;
-  }
-
-  @media (min-width: 768px) {
-    .swiper-slide img {
-      border-radius: 0;
-    }
   }
   /* ==================== swiper styles end */
 
