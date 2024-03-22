@@ -44,15 +44,62 @@
         "padding_top": 20,
         "padding_bottom": 200,
         "padding_top_mobile": 0,
-        "padding_bottom_mobile": 100,
+        "padding_bottom_mobile": 200,
         "background_image": "shopify:\/\/shop_images\/Vector1.png",
         "decor_button_text": "SHOP online",
         "decor_button_link": "#",
         "decor_image": "shopify:\/\/shop_images\/Cup.png"
       }
+    },
+    "discover_Xhd4Xm": {
+      "type": "discover",
+      "blocks": {
+        "main_slide_NUJ98T": {
+          "type": "main_slide",
+          "settings": {
+            "title_1": "Paraguayan",
+            "title_2": "food",
+            "button_text": "Menu",
+            "button_link": "",
+            "keywords_text": "handmade, traditional, authentic"
+          }
+        },
+        "secondary_slide_VK8Wh9": {
+          "type": "secondary_slide",
+          "settings": {
+            "subtitle": "Discover traditional paraguayan food",
+            "title": "delivered your door",
+            "secondary_button_text": "Order",
+            "secondary_button_link": ""
+          }
+        },
+        "secondary_slide_QJfTnf": {
+          "type": "secondary_slide",
+          "settings": {
+            "subtitle": "Discover traditional paraguayan food",
+            "title": "delivered your door",
+            "secondary_button_text": "Order",
+            "secondary_button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "main_slide_NUJ98T",
+        "secondary_slide_VK8Wh9",
+        "secondary_slide_QJfTnf"
+      ],
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 200,
+        "padding_top_mobile": 200,
+        "padding_bottom_mobile": 200,
+        "decor_button_text": "SHOP online",
+        "decor_button_link": ""
+      }
     }
   },
   "order": [
-    "carousel_ekV3Hr"
+    "carousel_ekV3Hr",
+    "discover_Xhd4Xm"
   ]
 }
