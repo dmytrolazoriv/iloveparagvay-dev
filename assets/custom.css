@@ -17,12 +17,7 @@
     font-size: clamp(1rem, 0.8544rem + 0.6214vw, 1.6rem);
     font-weight: 500;
     line-height: normal;
-    text-transform: uppercase;
-    border-radius: 30px;
-    background-color: #183e6f;
-    box-shadow: 0px 0px 4px 0px #ffffff, 0px 0px 10px 0px #183e6f;
     margin: 0 0 0 1rem;
-    transition: all 0.3s ease 0s;
     padding: 0 clamp(1.8rem, 1.4359rem + 1.5534vw, 3.3rem);
     white-space: nowrap;
 }
@@ -32,11 +27,6 @@
         margin: 0 1rem 0 1rem;
     }
 }
-
-.header__reserv-button:hover {
-    background-color: #6786b8;
-}
-
 
 .header__reserv-button::before,
 .header__reserv-button::after {
@@ -78,3 +68,17 @@
     top: 0.5rem;
 }
 /* Header styling end ===== */
+
+.blue-button {
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 30px;
+    background-color: #183e6f;
+    color: #ffffff;
+    box-shadow: 0px 0px 4px 0px #ffffff, 0px 0px 10px 0px #183e6f;
+    transition: all 0.3s ease 0s;
+}
+
+.blue-button:hover {
+    background-color: #6786b8;
+}

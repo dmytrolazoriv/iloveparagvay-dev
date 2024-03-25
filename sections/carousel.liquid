@@ -38,7 +38,7 @@
             {%- for block in section.blocks -%}
               {%- case block.type -%}
                 {%- when 'main_slide' -%}
-                  <div class="swiper-slide carousel__slide main-slide">
+                  <div class="swiper-slide carousel__slide main-slide" {{ block.shopify_attributes }}>
                     <div class="main-slide__outer">
                         <div class="main-slide__inner">
                             <h2 class="main-slide__title">
@@ -58,7 +58,7 @@
                   </div>
 
                   {%- when 'secondary_slide' -%}
-                  <div class="swiper-slide carousel__slide secondary-slide">
+                  <div class="swiper-slide carousel__slide secondary-slide" {{ block.shopify_attributes }}>
                     <div class="secondary-slide__outer">
                         <h2 class="secondary-slide__subtitle">{{ block.settings.subtitle }}</h2>
                         <div class="secondary-slide__inner">
