@@ -54,52 +54,80 @@
     "discover_Xhd4Xm": {
       "type": "discover",
       "blocks": {
-        "main_slide_NUJ98T": {
-          "type": "main_slide",
+        "small_item_YCjFiy": {
+          "type": "small_item",
           "settings": {
-            "title_1": "Paraguayan",
-            "title_2": "food",
-            "button_text": "Menu",
-            "button_link": "",
-            "keywords_text": "handmade, traditional, authentic"
+            "image_small": "shopify:\/\/shop_images\/dessert.png",
+            "name_small": "Desserts"
           }
         },
-        "secondary_slide_VK8Wh9": {
-          "type": "secondary_slide",
+        "big_item_AdYgPa": {
+          "type": "big_item",
           "settings": {
-            "subtitle": "Discover traditional paraguayan food",
-            "title": "delivered your door",
-            "secondary_button_text": "Order",
-            "secondary_button_link": ""
+            "image_big": "shopify:\/\/shop_images\/traditional.png",
+            "name_big": "Traditionals"
           }
         },
-        "secondary_slide_QJfTnf": {
-          "type": "secondary_slide",
+        "small_item_pXDAKD": {
+          "type": "small_item",
           "settings": {
-            "subtitle": "Discover traditional paraguayan food",
-            "title": "delivered your door",
-            "secondary_button_text": "Order",
-            "secondary_button_link": ""
+            "image_small": "shopify:\/\/shop_images\/drinks.png",
+            "name_small": "Drinks"
           }
         }
       },
       "block_order": [
-        "main_slide_NUJ98T",
-        "secondary_slide_VK8Wh9",
-        "secondary_slide_QJfTnf"
+        "small_item_YCjFiy",
+        "big_item_AdYgPa",
+        "small_item_pXDAKD"
       ],
       "settings": {
         "padding_top": 0,
         "padding_bottom": 200,
         "padding_top_mobile": 200,
         "padding_bottom_mobile": 200,
-        "decor_button_text": "SHOP online",
-        "decor_button_link": ""
+        "title": "Discover",
+        "subtitle": "New wow-flavors",
+        "button_text": "All menu",
+        "button_link": "",
+        "background_image": "shopify:\/\/shop_images\/Vector1.png"
+      }
+    },
+    "our_story_kWDXfM": {
+      "type": "our-story",
+      "blocks": {
+        "image_yEM8kh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/our-story-photo.png"
+          }
+        },
+        "info_3r7Yc8": {
+          "type": "info",
+          "settings": {
+            "title": "OUR STORY",
+            "desc": "<p>\n                  <span class=\"red\">I Love Paraguay Restaurant<\/span> is a love affair between <span class=\"blue\">community\n                  and food<\/span>, something all our neighbors and fellow Paraguayan citizens \n                  can share and take part in.\n                <\/p>\n                <p>\n                  We serve <span class=\"blue\">handmade, traditional, and authentic<\/span> Paraguayan food, \n                  inspired by our Guarani Indigenous descends, many of the dishes \n                  are named in Guarani as it describes the food in a unique and perfect \n                  way.\n                <\/p>",
+            "button_text": "Read more",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_yEM8kh",
+        "info_3r7Yc8"
+      ],
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 200,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 200,
+        "background_image": "shopify:\/\/shop_images\/Vector1.png"
       }
     }
   },
   "order": [
     "carousel_ekV3Hr",
-    "discover_Xhd4Xm"
+    "discover_Xhd4Xm",
+    "our_story_kWDXfM"
   ]
 }
