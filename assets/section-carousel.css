@@ -23,6 +23,15 @@
 
     .carousel {
       position: relative;
+      background-position: bottom left;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    @media (min-width: 576px) {
+      .carousel {
+        background-size: contain;
+      }
     }
 
     .carousel__inner {
@@ -371,15 +380,9 @@
     }
 
     .secondary-slide__button {
-      border-radius: 30px;
-      color: #ea552b;
       font-size: clamp(1.25rem, 1.068rem + 0.7767vw, 2rem);
       font-weight: 600;
       line-height: normal;
-      text-transform: uppercase;
-      background-color: #fbbd1f;
-      box-shadow: 0px 0px 10px 0px #ffcc48, 0px 0px 4px 0px rgb(var(--color-button-text));
-      transition: all 0.3s ease 0s;
       padding: 0;
       min-width: calc(9.4rem + var(--buttons-border-width) * 2);
       min-height: calc(3.6rem + var(--buttons-border-width) * 2);
@@ -394,7 +397,6 @@
     }
 
     .secondary-slide__button:hover {
-      color: #b31d26;
     }
 
     .secondary-slide__button::before,

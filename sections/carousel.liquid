@@ -15,9 +15,6 @@
 
   .carousel.section-{{ section.id }} {
       background-image: url("{{ section.settings.background_image | img_url: 'master' }}");
-      background-position: bottom left;
-      background-size: contain;
-      background-repeat: no-repeat;
     }
 {%- endstyle -%}
 
@@ -63,7 +60,7 @@
                         <h2 class="secondary-slide__subtitle">{{ block.settings.subtitle }}</h2>
                         <div class="secondary-slide__inner">
                             <h3 class="secondary-slide__title">{{ block.settings.title }}</h3>
-                            <a href="{{ block.settings.secondary_button_link }}" class="secondary-slide__button button">{{ block.settings.secondary_button_text }}</a>
+                            <a href="{{ block.settings.secondary_button_link }}" class="secondary-slide__button orange-button button">{{ block.settings.secondary_button_text }}</a>
                         </div>
                     </div>
 

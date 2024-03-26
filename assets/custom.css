@@ -82,3 +82,31 @@
 .blue-button:hover {
     background-color: #6786b8;
 }
+
+.red-button {
+    color:#ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 30px;
+    background-color: #b31d26;
+    box-shadow: 0px 0px 4px 0px #ffffff, 0px 0px 10px 0px #b31d26;
+    transition: all 0.3s ease 0s;
+}
+
+.red-button:hover {
+    background-color: #ea552b;
+}
+
+.orange-button {
+    border-radius: 30px;
+    color: #ea552b;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #fbbd1f;
+    box-shadow: 0px 0px 10px 0px #ffcc48, 0px 0px 4px 0px rgb(var(--color-button-text));
+    transition: all 0.3s ease 0s;
+}
+
+.orange-button:hover {
+    color: #b31d26;
+}
