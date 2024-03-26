@@ -123,11 +123,42 @@
         "padding_bottom_mobile": 200,
         "background_image": "shopify:\/\/shop_images\/Vector1.png"
       }
+    },
+    "reserve_6Dt3kQ": {
+      "type": "reserve",
+      "blocks": {
+        "info_rmtXEh": {
+          "type": "info",
+          "settings": {
+            "subtitle": "Become our guest and try",
+            "title": "Paraguayan dishes",
+            "button_text": "Reserve a table",
+            "button_link": "#"
+          }
+        },
+        "image_d6RY4a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/reserve-img-1.png"
+          }
+        }
+      },
+      "block_order": [
+        "info_rmtXEh",
+        "image_d6RY4a"
+      ],
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 100,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 200
+      }
     }
   },
   "order": [
     "carousel_ekV3Hr",
     "discover_Xhd4Xm",
-    "our_story_kWDXfM"
+    "our_story_kWDXfM",
+    "reserve_6Dt3kQ"
   ]
 }
