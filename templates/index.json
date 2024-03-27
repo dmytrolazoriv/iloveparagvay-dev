@@ -153,12 +153,65 @@
         "padding_top_mobile": 0,
         "padding_bottom_mobile": 200
       }
+    },
+    "reviews_7rb493": {
+      "type": "reviews",
+      "blocks": {
+        "review_bUBC37": {
+          "type": "review",
+          "settings": {
+            "item_avatar": "shopify:\/\/shop_images\/Ellipse_4.png",
+            "item_name": "Amy herrera",
+            "item_body": "I went there for my mom Bday and I came back for a farewell dinner with a big group of latinas talking at the same time 😁😁😁 … food, atmosphere and service was so great!! They also have live Paraguayan Typical music  with an “Arpa” … we really recommend it !!! thank so much I love Paraguay team !!🙏🏼👍🏼❤️"
+          }
+        },
+        "review_6PrWn3": {
+          "type": "review",
+          "settings": {
+            "item_avatar": "shopify:\/\/shop_images\/Ellipse_4.png",
+            "item_name": "Amy herrera",
+            "item_body": "I went there for my mom Bday and I came back for a farewell dinner with a big group of latinas talking at the same time 😁😁😁 … food, atmosphere and service was so great!! They also have live Paraguayan Typical music  with an “Arpa” … we really recommend it !!! thank so much I love Paraguay team !!🙏🏼👍🏼❤️"
+          }
+        },
+        "review_7fRwPK": {
+          "type": "review",
+          "settings": {
+            "item_avatar": "shopify:\/\/shop_images\/Ellipse_4.png",
+            "item_name": "Amy herrera",
+            "item_body": "I went there for my mom Bday and I came back for a farewell dinner with a big group of latinas talking at the same time 😁😁😁 … food, atmosphere and service was so great!! They also have live Paraguayan Typical music  with an “Arpa” … we really recommend it !!! thank so much I love Paraguay team !!🙏🏼👍🏼❤️"
+          }
+        },
+        "review_HRqgFV": {
+          "type": "review",
+          "settings": {
+            "item_avatar": "shopify:\/\/shop_images\/Ellipse_4.png",
+            "item_name": "Amy herrera",
+            "item_body": "I went there for my mom Bday and I came back for a farewell dinner with a big group of latinas talking at the same time 😁😁😁 … food, atmosphere and service was so great!! They also have live Paraguayan Typical music  with an “Arpa” … we really recommend it !!! thank so much I love Paraguay team !!🙏🏼👍🏼❤️"
+          }
+        }
+      },
+      "block_order": [
+        "review_bUBC37",
+        "review_6PrWn3",
+        "review_7fRwPK",
+        "review_HRqgFV"
+      ],
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 200,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 200,
+        "title": "what our guests say",
+        "button_text": "More REVIEWs ON",
+        "button_link": "#"
+      }
     }
   },
   "order": [
     "carousel_ekV3Hr",
     "discover_Xhd4Xm",
     "our_story_kWDXfM",
-    "reserve_6Dt3kQ"
+    "reserve_6Dt3kQ",
+    "reviews_7rb493"
   ]
 }
