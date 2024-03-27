@@ -381,7 +381,7 @@
 
     .secondary-slide__button {
       font-size: clamp(1.25rem, 1.068rem + 0.7767vw, 2rem);
-      font-weight: 600;
+      font-weight: 500;
       line-height: normal;
       padding: 0;
       min-width: calc(9.4rem + var(--buttons-border-width) * 2);

@@ -2,36 +2,119 @@
 }
 
 .reviews__head {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 0 40px 0;
+}
+
+@media (min-width: 768px) {
+    .reviews__head {
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .reviews__head {
+        align-items: center;
+    }
 }
 
 .reviews__title {
     color: #fbbd1f;
-    font-size: 80px;
+    font-size: clamp(3.32rem, 2.1841rem + 4.8466vw, 8rem);
     line-height: 100%;
     text-transform: uppercase;
     margin: 0;
 }
 
 .reviews__button {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: clamp(1rem, 0.7573rem + 1.0356vw, 2rem);
+    padding: clamp(1.1rem, 0.333rem + 1.1392vw, 1.7rem) clamp(1.7rem, 1.1417rem + 2.3819vw, 4rem);
+    font-weight: 500;
+    line-height: normal;
+    min-width: 114px;
+    white-space: nowrap;
+    align-self: flex-end;
+}
+
+@media (min-width: 425px) {
+    .reviews__button {
+        min-width: unset;
+    }
+}
+
+@media (min-width: 768px) {
+    .reviews__button {
+        align-self: unset;
+    }
 }
 
 .reviews__items {
+    display: flex;
+    gap: clamp(1.87rem, 1.6443rem + 0.9631vw, 2.8rem);
+    align-items: center;
+    overflow-x: auto;
 }
 
 .reviews__item {
+    background-color: #feecd7;
+    padding: clamp(-0.5rem, -1.1068rem + 2.589vw, 2rem) clamp(1.78rem, 1.3868rem + 1.6777vw, 3.4rem) clamp(1.66rem, 1.092rem + 2.4233vw, 4rem) clamp(1.78rem, 1.3868rem + 1.6777vw, 3.4rem);
+    border-radius: 10px;
+    min-width: clamp(19.9rem, 16.332rem + 15.2233vw, 34.6rem);
+    min-height: 300px;
+}
+
+@media (min-width: 768px) {
+    .reviews__item {
+        border-radius: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .reviews__item {
+        min-width: unset;
+    }
 }
 
 .item-reviews {
 }
 
 .item-reviews__heading {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-bottom: 2px solid #f8cf64;
 }
 
 .item-reviews__avatar {
 }
 
+.item-reviews__avatar img {
+    display: block;
+    width: clamp(2.94rem, 2.6584rem + 1.2013vw, 4.1rem);
+    height: auto;
+}
+
 .item-reviews__name {
+    color: #514e4b;
+    font-size: clamp(1.3rem, 1.1301rem + 0.7249vw, 2rem);
+    font-weight: 500;
+    line-height: 150%;
 }
 
 .item-reviews__body {
+    color: #514e4b;
+    font-size: clamp(1.17rem, 1.1142rem + 0.2382vw, 1.4rem);
+    font-weight: 500;
+    line-height: 150%;
+    margin: 0;
+    padding: clamp(1.83rem, 1.546rem + 1.2117vw, 3rem) 0 0 0;
 }

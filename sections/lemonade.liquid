@@ -1,4 +1,4 @@
-{{ 'section-reviews.css' | asset_url | stylesheet_tag }}
+{{ 'section-lemonade.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -14,42 +14,26 @@
   }
 {%- endstyle -%}
 
-<div class="reviews page-width section-{{ section.id }}-padding section-{{ section.id }}">
-    <div class="reviews__head">
-        <h2 class="reviews__title">{{ section.settings.title }}</h2>
-        <a href="{{ section.settings.button_link }}" class="reviews__button blue-button">
-          {{ section.settings.button_text }}
-          {% render 'icon-google' %}
-        </a>
-    </div>
-    <div class="reviews__items">
-      {%- if section.blocks.size > 0 -%}
-        {%- for block in section.blocks -%}
-          <div class="reviews__item item-reviews" {{ block.shopify_attributes }}>
-              <div class="item-reviews__heading">
-                  <div class="item-reviews__avatar">
-                      {%- if block.settings.item_avatar != blank -%}
-                        {{ block.settings.item_avatar | image_url: width: 41 | image_tag }}
-                      {%- endif -%}
-                  </div>
-                  <div class="item-reviews__name">
-                    {{ block.settings.item_name }}
-                  </div>
-              </div>
-              <p class="item-reviews__body">
-                {{ block.settings.item_body }}
-              </p>
-          </div>
-        {%- endfor -%}
-      {% endif %}
+<div class="lemonade section-{{ section.id }}-padding section-{{ section.id }}">
+    <div class="lemonade__body">
+        <div class="lemonade__image">
+            <img src="https://cdn.shopify.com/s/files/1/0569/6241/6736/files/lemonade-hand.png?v=1711555865" alt="">
+        </div>
+        <div class="lemonade__info info-lemonade">
+            <h3 class="info-lemonade__subtitle">Try our signature</h3>
+            <div class="info-lemonade__inner">
+                <a href="#" class="info-lemonade__button orange-button">Choose</a>
+                <h2 class="info-lemonade__title">lemonades</h2>
+            </div>
+        </div>
     </div>
 </div>
 
 {% schema %}
     {
-      "name": "Reviews",
-      "max_blocks": 4,
-      "settings": [
+        "name": "Lemonade",
+        "max_blocks": 2,
+        "settings": [
         {
             "type": "header",
             "content": "t:sections.all.padding.section_padding_heading"
@@ -99,90 +83,80 @@
             "default": 24
         },
         {
-          "type": "header",
-          "content": "Section text & button settings"
+            "type": "header",
+            "content": "Section text & button settings"
         },
         {
-          "type": "text",
-          "id": "title",
-          "label": "Title",
-          "default": "what our guests say"
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "what our guests say"
         },
         {
-          "type": "text",
-          "id": "button_text",
-          "label": "Button text",
-          "default": "More REVIEWs ON"
+            "type": "text",
+            "id": "button_text",
+            "label": "Button text",
+            "default": "More REVIEWs ON"
         },
         {
-          "type": "url",
-          "id": "button_link",
-          "label": "Button link"
+            "type": "url",
+            "id": "button_link",
+            "label": "Button link"
         }
-      ],
-      "blocks": [
-          {
+        ],
+        "blocks": [
+            {
             "name": "Review",
             "type": "review",
             "settings": [
-              {
+                {
                 "type": "header",
                 "content": "Item image settings"
-              },
-              {
+                },
+                {
                 "type": "image_picker",
                 "id": "item_avatar",
                 "label": "Item avatar"
-              },
-              {
+                },
+                {
                 "type": "header",
                 "content": "Item text settings"
-              },
-              {
+                },
+                {
                 "type": "text",
                 "id": "item_name",
                 "label": "Item name",
                 "default": "Amy herrera"
-              },
-              {
+                },
+                {
                 "type": "textarea",
                 "id": "item_body",
                 "label": "Item text"
-              }
+                }
             ]
-          }
-      ],
-      "presets": [
+            }
+        ],
+        "presets": [
         {
-          "name": "Reviews",
-          "settings": {
-          },
-          "blocks": [
+            "name": "Lemonade",
+            "settings": {
+            },
+            "blocks": [
             {
-              "type": "review",
-              "settings": {
+                "type": "review",
+                "settings": {
                 }
             },
             {
-              "type": "review",
-              "settings": {
-                }
-            },
-            {
-              "type": "review",
-              "settings": {
-                }
-            },
-            {
-              "type": "review",
-              "settings": {
+                "type": "review",
+                "settings": {
                 }
             }
-          ]
+            ]
         }
-      ],
-      "enabled_on": {
+        ],
+        "enabled_on": {
         "templates": ["*"]
-      }
+        }
     }
     {% endschema %}
