@@ -1,26 +1,136 @@
 .lemonade {
+    position: relative;
+    /* background-color: #a2cc84;
+    height: 100%;
+    width: 100%; */
+    /* margin: 200px 0; */
+}
+
+.lemonade::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: #a2cc84;
+    height: clamp(16.6rem, 10.9204rem + 24.233vw, 40rem);
+    width: 100%;
+    z-index: -1;
+    -webkit-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+        transform: translate(0%, -50%);
 }
 
 .lemonade__body {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    align-items: center;
 }
 
 .lemonade__image {
+    position: absolute;
+    left: clamp(-5rem, -6.2136rem + 5.178vw, 0rem);
+    margin-top: clamp(-12rem, -11.1419rem + -3.6613vw, -17rem);
+}
+
+@media (min-width: 768px) {
+    .lemonade__image {
+        /* margin-top: 0; */
+    }
+}
+
+.lemonade__image img {
+    display: block;
+    line-height: 0;
+    /* max-width: clamp(13rem, 3.5606rem + 40.2746vw, 68rem); */
+    max-width: clamp(16rem, 7.0755rem + 38.0778vw, 68rem);
+    height: auto;
 }
 
 .lemonade__info {
 }
 
 .info-lemonade {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 10px;
+    /* margin-left: 0; */
+    padding-left: calc(clamp(-10rem, -23.4211rem + 57.2632vw, 68.2rem) / 2);
+    /* margin-left: 0;
+    padding-left: 0;
+    margin-top: 7%; */
+    margin-right: 0;
+    height: clamp(16.6rem, 10.9204rem + 24.233vw, 40rem);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 1;
+}
+
+@media (min-width: 768px) {
+    .info-lemonade {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1290px) {
+    .info-lemonade {
+        align-items: center;
+        padding-left: clamp(13rem, 3.5263rem + 40.4211vw, 68.2rem);
+        margin-right: auto;
+    }
 }
 
 .info-lemonade__subtitle {
+    color: #ffffff;
+    font-size: clamp(1.7rem, 1.3053rem + 1.6842vw, 4rem);
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: right;
+    max-width: 170px;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .info-lemonade__subtitle {
+        text-align: center;
+        max-width: 100%;
+    }
 }
 
 .info-lemonade__inner {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: clamp(0.5rem, -0.1007rem + 2.5629vw, 4rem);
+}
+
+@media (min-width: 768px) {
+    .info-lemonade__inner {
+        flex-direction: row;
+    }
 }
 
 .info-lemonade__button {
+    display: inline-block;
+    font-size: clamp(1.095rem, 0.8753rem + 0.9372vw, 2rem);
+    font-weight: 500;
+    line-height: normal;
+    padding: 10px 20px;
+}
+
+@media (min-width: 425px) {
+    .info-lemonade__button {
+        padding: clamp(1.08rem, 0.9736rem + 0.454vw, 1.7rem) clamp(1.7rem, 1.3053rem + 1.6842vw, 4rem);
+    }
 }
 
 .info-lemonade__title {
+    color: #6786b8;
+    font-size: clamp(3.36rem, 2.5637rem + 3.3977vw, 8rem);
+    font-weight: 500;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin: 0;
 }
