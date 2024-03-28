@@ -205,6 +205,20 @@
         "button_text": "More REVIEWs ON",
         "button_link": "#"
       }
+    },
+    "lemonade_dCHHT8": {
+      "type": "lemonade",
+      "settings": {
+        "padding_top": 200,
+        "padding_bottom": 200,
+        "padding_top_mobile": 200,
+        "padding_bottom_mobile": 200,
+        "image": "shopify:\/\/shop_images\/lemonade-hand.png",
+        "subtitle": "Try our signature",
+        "title": "lemonades",
+        "button_text": "Choose",
+        "button_link": ""
+      }
     }
   },
   "order": [
@@ -212,6 +226,7 @@
     "discover_Xhd4Xm",
     "our_story_kWDXfM",
     "reserve_6Dt3kQ",
-    "reviews_7rb493"
+    "reviews_7rb493",
+    "lemonade_dCHHT8"
   ]
 }
