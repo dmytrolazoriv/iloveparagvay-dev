@@ -1,0 +1,107 @@
+.shop {
+}
+
+.shop__inner {
+}
+
+.shop__top {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: clamp(0.5rem, -0.1007rem + 2.5629vw, 4rem);
+    margin-bottom: clamp(1.659375rem, 1.0913rem + 2.4239vw, 4rem);
+}
+
+@media (min-width: 768px) {
+    /* .shop__top {
+        flex-direction: row;
+    } */
+}
+
+.shop__title {
+    color: #6786b8;
+    font-size: clamp(3.36rem, 2.5637rem + 3.3977vw, 8rem);
+    font-weight: 500;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.shop__button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(1.095rem, 0.8753rem + 0.9372vw, 2rem);
+    font-weight: 500;
+    line-height: normal;
+    padding: 10px 20px;
+    white-space: nowrap;
+}
+
+.shop__button::before,
+.shop__button::after {
+    content: none;
+}
+
+@media (min-width: 425px) {
+    .shop__button {
+        padding: clamp(1.08rem, 0.9736rem + 0.454vw, 1.7rem) clamp(1.7rem, 1.3053rem + 1.6842vw, 4rem);
+    }
+}
+
+.shop__items {
+    position: relative;
+    overflow-x: hidden;
+    /* width: 100vw; */
+    margin-right: calc((-100vw + 100%) / 2);
+}
+
+.shop__items::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -200px;
+    width: 200px;
+    background-color: rgb(var(--color-background));
+    z-index: 1;
+    margin: -1px 0;
+}
+
+@media (min-width: 768px) {
+    .shop__items::after {
+        left: -346px;
+        width: 346px;
+    }
+}
+
+.shop__items-wrapper {
+    gap: clamp(1.396875rem, 1.0563rem + 1.4531vw, 2.8rem);
+}
+
+.shop__item {
+    width: clamp(8.15625rem, 1.7379rem + 27.3851vw, 34.6rem);
+}
+
+.item-shop {
+    flex-direction: column;
+}
+
+.item-shop__image {
+    margin: 0 0 clamp(0.8rem, 0.4117rem + 1.657vw, 2.4rem) 0;
+}
+
+.item-shop__name {
+    color: #514e4b;
+    font-size: clamp(1.1rem, 0.9301rem + 0.7249vw, 1.8rem);
+    margin: 0 0 10px 0;
+    line-height: normal;
+}
+
+.item-shop__price {
+    font-size: clamp(1.1rem, 0.8816rem + 0.932vw, 2rem);
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+}

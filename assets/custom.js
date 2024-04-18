@@ -67,5 +67,15 @@ window.addEventListener('load', carouselDecorButtonPosition);
 window.addEventListener('resize', carouselDecorButtonPosition);
 window.addEventListener('orientationchange', carouselDecorButtonPosition);
 
+// ======================
+if (document.querySelector(".shop__items")) {
+    const productsSlider = new Swiper(".shop__items", {
+        slidesPerView: 'auto',
+        spaceBetween: 0,
+        // loop: true,
+    });
+}
+// ============================================
+
 
 });

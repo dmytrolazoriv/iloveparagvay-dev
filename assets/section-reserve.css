@@ -122,11 +122,13 @@
     position: relative;
     top: clamp(-9.55rem, -10.4117rem + 3.6764vw, -6rem);
     margin-left: auto;
+    margin-bottom: clamp(-9.55rem, -10.4117rem + 3.6764vw, -6rem);
 }
 
 @media (min-width: 768px) {
     .reserve__image {
         position: static;
+        margin-bottom: 0;
     }
 }
 

@@ -1,0 +1,209 @@
+{{ 'section-shop.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top_mobile | times: 0.5 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom_mobile | times: 0.5 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="shop page-width section-{{ section.id }}-padding section-{{ section.id }}">
+    <div class="shop__inner">
+        <div class="shop__top">
+            <h3 class="shop__title">favorite flavors </h3>
+            <a href="#" class="shop__button blue-button button">SHOP online</a>
+        </div>
+        <div class="shop__items">
+            <div class="shop__items-wrapper swiper-wrapper">
+                <div class="shop__item item-shop swiper-slide">
+                    <div class="item-shop__image">
+                        <img src="https://cdn.shopify.com/s/files/1/0569/6241/6736/files/shop-image-1.png?v=1713449309" alt="">
+                    </div>
+                    <h4 class="item-shop__name">Product name</h4>
+                    <p class="item-shop__price">$ 10</p>
+                </div>
+                <div class="shop__item item-shop swiper-slide">
+                    <div class="item-shop__image">
+                        <img src="https://cdn.shopify.com/s/files/1/0569/6241/6736/files/shop-image-2.png?v=1713449309" alt="">
+                    </div>
+                    <h4 class="item-shop__name">Product name</h4>
+                    <p class="item-shop__price">$ 10</p>
+                </div>
+                <div class="shop__item item-shop swiper-slide">
+                    <div class="item-shop__image">
+                        <img src="https://cdn.shopify.com/s/files/1/0569/6241/6736/files/shop-image-3.png?v=1713449309" alt="">
+                    </div>
+                    <h4 class="item-shop__name">Product name</h4>
+                    <p class="item-shop__price">$ 10</p>
+                </div>
+                <div class="shop__item item-shop swiper-slide">
+                    <div class="item-shop__image">
+                        <img src="https://cdn.shopify.com/s/files/1/0569/6241/6736/files/shop-image-4.png?v=1713449308" alt="">
+                    </div>
+                    <h4 class="item-shop__name">Product name</h4>
+                    <p class="item-shop__price">$ 10</p>
+                </div>
+                <div class="shop__item item-shop swiper-slide">
+                    <div class="item-shop__image">
+                        <img src="https://cdn.shopify.com/s/files/1/0569/6241/6736/files/shop-image-5.png?v=1713449308" alt="">
+                    </div>
+                    <h4 class="item-shop__name">Product name</h4>
+                    <p class="item-shop__price">$ 10</p>
+                </div>
+                <div class="shop__item item-shop swiper-slide">
+                    <div class="item-shop__image">
+                        <img src="https://cdn.shopify.com/s/files/1/0569/6241/6736/files/shop-image-2.png?v=1713449309" alt="">
+                    </div>
+                    <h4 class="item-shop__name">Product name</h4>
+                    <p class="item-shop__price">$ 10</p>
+                </div>
+                <div class="shop__item item-shop swiper-slide">
+                    <div class="item-shop__image">
+                        <img src="https://cdn.shopify.com/s/files/1/0569/6241/6736/files/shop-image-3.png?v=1713449309" alt="">
+                    </div>
+                    <h4 class="item-shop__name">Product name</h4>
+                    <p class="item-shop__price">$ 10</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "Shop",
+        "settings": [
+        {
+            "type": "header",
+            "content": "t:sections.all.padding.section_padding_heading"
+        },
+        {
+            "type": "range",
+            "id": "padding_top",
+            "min": 0,
+            "max": 200,
+            "step": 2,
+            "unit": "px",
+            "label": "t:sections.all.padding.padding_top",
+            "default": 32
+        },
+        {
+            "type": "range",
+            "id": "padding_bottom",
+            "min": 0,
+            "max": 200,
+            "step": 2,
+            "unit": "px",
+            "label": "t:sections.all.padding.padding_bottom",
+            "default": 32
+        },
+        {
+            "type": "header",
+            "content": "t:sections.all.padding.section_padding_mobile_heading"
+        },
+        {
+            "type": "range",
+            "id": "padding_top_mobile",
+            "min": 0,
+            "max": 200,
+            "step": 2,
+            "unit": "px",
+            "label": "t:sections.all.padding.padding_top",
+            "default": 24
+        },
+        {
+            "type": "range",
+            "id": "padding_bottom_mobile",
+            "min": 0,
+            "max": 200,
+            "step": 2,
+            "unit": "px",
+            "label": "t:sections.all.padding.padding_bottom",
+            "default": 24
+        }
+        ],
+        "blocks": [
+            {
+            "name": "Image block",
+            "type": "image",
+            "settings": [
+            {
+                "type": "header",
+                "content": "Image settings"
+            },
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "Image"
+            }
+            ]
+            },
+            {
+            "name": "Info block",
+            "type": "info",
+            "settings": [
+                {
+                "type": "header",
+                "content": "Text settings"
+            },
+            {
+                "type": "text",
+                "id": "subtitle",
+                "label": "Subtitle",
+                "default": "Become our guest and try"
+            },
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Title",
+                "default": "Paraguayan dishes"
+            },
+            {
+                "type": "header",
+                "content": "Button settings"
+            },
+            {
+                "type": "text",
+                "id": "button_text",
+                "label": "Button text",
+                "default": "Reserve a table"
+            },
+            {
+                "type": "url",
+                "id": "button_link",
+                "label": "Button link"
+            }
+            ]
+            }
+        ],
+        "presets": [
+        {
+            "name": "Shop",
+            "settings": {
+            },
+            "blocks": [
+            {
+                "type": "info",
+                "settings": {
+                }
+            },
+            {
+                "type": "image",
+                "settings": {
+                }
+            }
+            ]
+        }
+        ],
+        "enabled_on": {
+        "templates": ["*"]
+        }
+    }
+    {% endschema %}

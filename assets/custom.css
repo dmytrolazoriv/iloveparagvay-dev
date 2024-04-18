@@ -1,3 +1,9 @@
+/* Basic styling start ===== */
+body {
+    overflow-x: hidden;
+}
+/* Basic styling end ===== */
+
 /* Header styling start ===== */
 .header__inline-menu_custom,
 .disclosure__button_custom {
