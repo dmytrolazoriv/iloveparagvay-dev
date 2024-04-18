@@ -219,6 +219,64 @@
         "button_text": "Choose",
         "button_link": ""
       }
+    },
+    "assortment_3Ue974": {
+      "type": "assortment",
+      "blocks": {
+        "info_enMhy7": {
+          "type": "info",
+          "settings": {
+            "subtitle": "Become our guest and try",
+            "title": "Paraguayan dishes",
+            "button_text": "Reserve a table",
+            "button_link": ""
+          }
+        },
+        "image_EyniVc": {
+          "type": "image",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "info_enMhy7",
+        "image_EyniVc"
+      ],
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 200,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 200
+      }
+    },
+    "shop_FNzYUb": {
+      "type": "shop",
+      "blocks": {
+        "info_xygaVk": {
+          "type": "info",
+          "settings": {
+            "subtitle": "Become our guest and try",
+            "title": "Paraguayan dishes",
+            "button_text": "Reserve a table",
+            "button_link": ""
+          }
+        },
+        "image_Mp3dJN": {
+          "type": "image",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "info_xygaVk",
+        "image_Mp3dJN"
+      ],
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 200,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 200
+      }
     }
   },
   "order": [
@@ -227,6 +285,8 @@
     "our_story_kWDXfM",
     "reserve_6Dt3kQ",
     "reviews_7rb493",
-    "lemonade_dCHHT8"
+    "lemonade_dCHHT8",
+    "assortment_3Ue974",
+    "shop_FNzYUb"
   ]
 }
