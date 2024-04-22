@@ -2,6 +2,15 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "custom_footer_KJw3Y8": {
+      "type": "custom-footer",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
     "footer": {
       "type": "footer",
       "disabled": true,
@@ -22,6 +31,7 @@
     }
   },
   "order": [
+    "custom_footer_KJw3Y8",
     "footer"
   ]
 }

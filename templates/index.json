@@ -277,15 +277,6 @@
         "padding_top_mobile": 0,
         "padding_bottom_mobile": 200
       }
-    },
-    "custom_footer_RiFxLJ": {
-      "type": "custom-footer",
-      "settings": {
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "padding_top_mobile": 0,
-        "padding_bottom_mobile": 0
-      }
     }
   },
   "order": [
@@ -296,7 +287,6 @@
     "reviews_7rb493",
     "lemonade_dCHHT8",
     "assortment_3Ue974",
-    "shop_FNzYUb",
-    "custom_footer_RiFxLJ"
+    "shop_FNzYUb"
   ]
 }
