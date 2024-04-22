@@ -1,5 +1,5 @@
 /* Basic styling start ===== */
-body {
+html {
     overflow-x: hidden;
 }
 /* Basic styling end ===== */
@@ -116,3 +116,52 @@ body {
 .orange-button:hover {
     color: #b31d26;
 }
+
+.yellow-light {
+    border-radius: 30px;
+    color: #ea552b;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #feecd7;
+    box-shadow: 0px 0px 4px 0px #ffffff, 0px 0px 10px 0px #ffcc48;
+    transition: all 0.3s ease 0s;
+}
+
+.yellow-light:hover {
+    background-color: #f7f2ee;
+    box-shadow: 0px 0px 4px 0px #ffffff, 0px 0px 10px 0px #ffdd86;
+}
+
+/* Icon Styling start */
+.icon-trolley {
+}
+
+.icon-trolley__wrapper {
+    position: absolute;
+    bottom: clamp(-9.4rem, -4.7087rem + -3.9094vw, -5.625rem);
+    left: 50%;
+    transform: translate(-50%, 0px);
+    -webkit-transform: translate(-50%, 0px);
+    -ms-transform: translate(-50%, 0px);
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: clamp(1.85625rem, 0.6078rem + 5.3269vw, 7rem);
+    height: clamp(1.85625rem, 0.6078rem + 5.3269vw, 7rem);
+    border-radius: 50%;
+    border: 2px solid #feecd7;
+    background-color: #183e6f;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.icon-trolley__wrapper svg {
+    width: clamp(0.6625rem, 0.0951rem + 2.4207vw, 3rem);
+    height: clamp(0.6625rem, 0.0951rem + 2.4207vw, 3rem);
+}
+
+.icon-trolley__wrapper:hover {
+    background-color: #6786b8;
+}
+/* Icon Styling end */

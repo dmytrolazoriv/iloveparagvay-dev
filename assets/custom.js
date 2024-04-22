@@ -71,8 +71,14 @@ window.addEventListener('orientationchange', carouselDecorButtonPosition);
 if (document.querySelector(".shop__items")) {
     const productsSlider = new Swiper(".shop__items", {
         slidesPerView: 'auto',
-        spaceBetween: 0,
+        spaceBetween: 16,
         // loop: true,
+        breakpoints: {
+            // when window width is >= 768px
+            768: {
+              spaceBetween: 28
+            },
+        }
     });
 }
 // ============================================
